@@ -1,31 +1,38 @@
+serviceAccountKey*.json
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
 # Dependencies
 /node_modules
-/jspm_packages
+/.pnp
+.pnp.js
 
 # Testing
-/lib-cov
 /coverage
-/.nyc_output
 
-# Environment
-.env
-.env.test
+# Next.js
+/.next/
+/out/
 
-# Logs and temporary files
-*.log
+# Production
+/build
+
+# Misc
+.DS_Store
+*.pem
+
+# Local secrets
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-*.pid
-*.seed
-*.gz
-*.tgz
 
-# IDEs and OS
-.DS_Store           # macOS
-.idea/              # JetBrains IDEs (e.g., WebStorm)
-.vscode/            # VS Code, consider tracking settings.json if needed
-
-# Build/Dist files
-/dist
-/build
+# Genkit
+.genkit/
+.genkit-cache/
+genkit.log

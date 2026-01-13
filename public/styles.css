@@ -1,1 +1,21 @@
-/** Add styles here */
+body {
+    font-family: sans-serif;
+}
+
+#status-container {
+    border: 1px solid;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.status-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.status-error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
